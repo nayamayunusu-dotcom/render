@@ -3,7 +3,7 @@ from account.views import home,admin,subjects,timetables,edit_subject,delete_sub
 from account.authenticates import registration_page,login_page
 
 urlpatterns = [
-    path('registration_page/',registration_page,name='registration_page'),
+    path('',registration_page,name='registration_page'),
     path('login_page/',login_page,name='login_page'),
 
     path('',home,name='students'),
